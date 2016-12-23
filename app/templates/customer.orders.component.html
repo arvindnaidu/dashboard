@@ -1,0 +1,19 @@
+<h3 class="oders-title">{{title}}</h3>
+<ul class="orders-filters">
+  <li class="active">All</li>
+  <li>Pending</li>
+  <li>Delivered</li>
+</ul>
+<table class="orders-list">
+  <tr>
+    <th>Date</th><th>Model</th><th>Version</th><th>Fuel type</th><th>Quantity</th><th>Status</th>
+  </tr>
+  <tr class="order" *ngFor="let order of orders">
+    <td>{{order.orderDate}}</td>
+    <td>{{order.model}}</td>
+    <td>{{order.version}}</td>
+    <td>{{order.fuelType}}</td>
+    <td>{{order.quantity}}</td>
+    <td>{{order.status}}</td>
+  </tr>
+</table>
